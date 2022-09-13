@@ -101,7 +101,6 @@ export default class Hud extends Component {
 
   createBSpell = () => {
     const element1 = this.state.element1;
-    const combinedElement = this.state.combinedElement;
     const form = this.state.form;
     const spell = this.state.spell;
 
