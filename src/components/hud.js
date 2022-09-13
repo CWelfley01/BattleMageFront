@@ -117,7 +117,6 @@ export default class Hud extends Component {
   };
 
   createASpell = () => {
-    
     const combinedElement = this.state.combinedElement;
     const form = this.state.form;
     const spell = this.state.spell;
