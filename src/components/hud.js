@@ -123,7 +123,7 @@ export default class Hud extends Component {
     const spell = this.state.spell;
 
     axios.get(`https://caw-capstone.herokuapp.com/Form`).then((response) => {
-      this.setState({
+      console.log({
         spell: response.data
           .filter((item) =>
             item.Combine.includes(
@@ -131,7 +131,6 @@ export default class Hud extends Component {
             )
           )
           .map((filteredItem) => filteredItem.End),
-          
       });
     });
   };
@@ -182,9 +181,7 @@ export default class Hud extends Component {
             <div className="dead">{this.state.element2}</div>
             <div className="dead">{this.state.combinedElement}</div>
             <div className="dead">{this.state.form}</div>
-            <div className="live">
-              {this.state.spell}
-            </div>
+            <div className="live">{this.state.spell}</div>
           </div>
         </div>
         <div className="hud">
