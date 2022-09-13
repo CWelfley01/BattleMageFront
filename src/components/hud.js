@@ -121,7 +121,7 @@ export default class Hud extends Component {
     const spell = this.state.spell;
 
     axios.get(`https://caw-capstone.herokuapp.com/Form`).then((response) => {
-      console.log({
+      this.setState({
         spell: response.data
           .filter((item) =>
             item.Combine.includes(
