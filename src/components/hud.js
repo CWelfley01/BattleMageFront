@@ -136,6 +136,8 @@ export default class Hud extends Component {
   componentDidUpdate(prevProps, prevState) {
     if (this.state.element1 !== "blank") {
       if (prevState.element2 !== this.state.element2) {
+        if(this.state.element1 === this.state.element2)
+        return "BANG!!! Your spell backfired and killed you!!"}else{
         this.combineElements();
       }
       if (prevState.form !== this.state.form) {
