@@ -1,0 +1,60 @@
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .spellform {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+
+    .background {
+      height: 1000px;
+
+      img {
+        height: 1000px;
+      }
+    }
+    .foreground {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 10;
+      margin-top: 350px;
+      margin-left: 480px;
+      font-size: 50px;
+      
+      .live {
+        visibility: visible;
+      }
+      .dead {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .hud {
+    display: flex;
+    justify-content: center;
+
+    .mana {
+      display: grid;
+      height: 200px;
+      width: 190px;
+      img {
+        height: 200px;
+        width: 190px;
+      }
+    }
+    .form {
+      display: grid;
+      height: 200px;
+      width: 190px;
+      img {
+        height: 200px;
+        width: 190px;
+      }
+    }
+  }
+}
