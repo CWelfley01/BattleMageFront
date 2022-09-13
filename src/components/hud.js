@@ -183,7 +183,7 @@ export default class Hud extends Component {
             <div className="dead">{this.state.combinedElement}</div>
             <div className="dead">{this.state.form}</div>
             <div className="live">
-              <img src={`${this.state.spell}`} alt={this.state.spell}/>
+              {this.state.spell}
             </div>
           </div>
         </div>
