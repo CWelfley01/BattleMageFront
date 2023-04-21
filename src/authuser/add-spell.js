@@ -21,7 +21,7 @@ export default function addSpell() {
   const postSpell = (event) => {
     axios
       .post(
-        "http://127.0.0.1:5000/add-spell",
+        "https://battlemage.herokuapp.com/:5000/add-spell",
         {
           spellname: spellname,
           attackmod: attackmod,

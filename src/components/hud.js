@@ -88,7 +88,7 @@ export default class Hud extends Component {
   combineElements = () => {
     const element1 = this.state.element1;
     const element2 = this.state.element2;
-    axios.get(`https://caw-capstone.herokuapp.com/Element`).then((response) => {
+    axios.get(`https://battlemage.herokuapp.com/:5000/Element`).then((response) => {
       this.setState({
         combinedElement: response.data
           .filter((item) =>
@@ -104,7 +104,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`https://caw-capstone.herokuapp.com/Form`).then((response) => {
+    axios.get(`https://battlemage.herokuapp.com/:5000/Form`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
@@ -120,7 +120,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`https://caw-capstone.herokuapp.com/Form`).then((response) => {
+    axios.get(`https://battlemage.herokuapp.com/:5000`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
@@ -150,6 +150,10 @@ export default class Hud extends Component {
         }
       }
     }
+    //  if(this.state.combinedElement !== "blank") {
+    //   document.getElementsById("element1"),
+    //    
+    //         }
   }
 
   clearSpellForm = () => {
@@ -179,11 +183,11 @@ export default class Hud extends Component {
             {/* <img src={PoweredScroll} className="live" /> */}
           </div>
           <div className="foreground">
-            <div className="dead">{this.state.element1}</div>
-            <div className="dead">{this.state.element2}</div>
-            <div className="dead">{this.state.combinedElement}</div>
-            <div className="dead">{this.state.form}</div>
-            <div className="live">{this.state.spell}</div>
+            <div id="element1" className="dead">{this.state.element1}</div>
+            <div id="element2">{this.state.element2}</div>
+            <div id="combinedelement"className="dead">{this.state.combinedElement}</div>
+            <div>{this.state.form}</div>
+            <div id="spell" className="live">{this.state.spell}</div>
           </div>
         </div>
         <div className="hud">
