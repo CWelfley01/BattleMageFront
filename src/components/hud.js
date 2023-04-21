@@ -120,7 +120,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`https://battlemage.herokuapp.com/:5000`).then((response) => {
+    axios.get(`https://battlemage.herokuapp.com/5000`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
