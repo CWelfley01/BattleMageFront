@@ -21,7 +21,7 @@ export default function addElement() {
   const postElement = (event) => {
     axios
       .post(
-        "http://127.0.0.1:5000/add-element",
+        "https://caw-capstone.herokuapp.com/add-element",
         {
           Combo: Combo,
           Result: Result,

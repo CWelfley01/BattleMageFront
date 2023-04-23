@@ -21,7 +21,7 @@ export default function addSpell() {
   const postSpell = (event) => {
     axios
       .post(
-        "http://127.0.0.1:5000/add-spell",
+        "https://caw-capstone.herokuapp.com/add-spell",
         {
           spellname: spellname,
           attackmod: attackmod,
