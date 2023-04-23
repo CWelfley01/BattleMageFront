@@ -88,7 +88,7 @@ export default class Hud extends Component {
   combineElements = () => {
     const element1 = this.state.element1;
     const element2 = this.state.element2;
-    axios.get(`https://battlemage.herokuapp.com/Element`).then((response) => {
+    axios.get(`http://127.0.0.1:5000/Element`).then((response) => {
       this.setState({
         combinedElement: response.data
           .filter((item) =>
@@ -104,7 +104,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`https://battlemage.herokuapp.com/Form`).then((response) => {
+    axios.get(`http://127.0.0.1:5000/Form`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
@@ -120,7 +120,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`https://battlemage.herokuapp.com/`).then((response) => {
+    axios.get(`http://127.0.0.1:5000/`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
