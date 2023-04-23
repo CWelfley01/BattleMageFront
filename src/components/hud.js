@@ -120,7 +120,7 @@ export default class Hud extends Component {
     const form = this.state.form;
     const spell = this.state.spell;
 
-    axios.get(`http://127.0.0.1:5000/`).then((response) => {
+    axios.get(`http://127.0.0.1:5000/Form`).then((response) => {
       this.setState({
         spell: response.data
           .filter((item) =>
@@ -150,10 +150,7 @@ export default class Hud extends Component {
         }
       }
     }
-    //  if(this.state.combinedElement !== "blank") {
-    //   document.getElementsById("element1"),
-    //    
-    //         }
+    
   }
 
   clearSpellForm = () => {
@@ -183,10 +180,10 @@ export default class Hud extends Component {
             {/* <img src={PoweredScroll} className="live" /> */}
           </div>
           <div className="foreground">
-            <div id="element1" className="dead">{this.state.element1}</div>
-            <div id="element2">{this.state.element2}</div>
-            <div id="combinedelement"className="dead">{this.state.combinedElement}</div>
-            <div>{this.state.form}</div>
+            <div id="element1" className="live">{this.state.element1}</div>
+            <div id="element2" className="live">{this.state.element2}</div>
+            <div id="combinedelement"className="live">{this.state.combinedElement}</div>
+            <div id="form" className="live">{this.state.form}</div>
             <div id="spell" className="live">{this.state.spell}</div>
           </div>
         </div>
