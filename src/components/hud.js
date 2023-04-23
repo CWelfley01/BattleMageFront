@@ -88,7 +88,7 @@ export default class Hud extends Component {
   combineElements = () => {
     const element1 = this.state.element1;
     const element2 = this.state.element2;
-    axios.get(`https://caw-capstone.herokuapp.com/Element`).then((response) => {
+    axios.get(`https://caw-capstone.herokuapp.com/Element/`).then((response) => {
       this.setState({
         combinedElement: response.data
           .filter((item) =>
