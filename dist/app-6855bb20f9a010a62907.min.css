@@ -1,0 +1,125 @@
+.add-spell {
+  display: grid;
+}
+.add-spell .element-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}.nav-header {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.nav-header .navbar-link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+}
+.nav-header .selected {
+  font-size: 4rem;
+  font-weight: 600;
+}html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "montserrat";
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  background-color: black;
+}
+body .app-wrapper .add-spell {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+body .app-wrapper .add-spell img {
+  height: 300px;
+  width: 100%;
+}
+body .app-wrapper .add-spell h1 {
+  color: white;
+}
+body .app-wrapper .add-spell .add-spell-page .add-spell-form input {
+  font-size: 35px;
+}
+.app {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.mana-icon {
+  height: 200px;
+}.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content-wrapper .spellform {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.content-wrapper .spellform .background {
+  height: 1000px;
+}
+.content-wrapper .spellform .background img {
+  height: 1000px;
+}
+.content-wrapper .spellform .foreground {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  margin-top: 350px;
+  margin-left: 480px;
+  font-size: 50px;
+}
+.content-wrapper .spellform .foreground .live {
+  visibility: visible;
+}
+.content-wrapper .spellform .foreground .dead {
+  visibility: hidden;
+}
+.content-wrapper .hud {
+  display: flex;
+  justify-content: center;
+}
+.content-wrapper .hud .mana {
+  display: grid;
+  height: 200px;
+  width: 190px;
+}
+.content-wrapper .hud .mana img {
+  height: 200px;
+  width: 190px;
+}
+.content-wrapper .hud .form {
+  display: grid;
+  height: 200px;
+  width: 190px;
+}
+.content-wrapper .hud .form img {
+  height: 200px;
+  width: 190px;
+}
+/*# sourceMappingURL=app-5e20378c8771c825af62.map*/
