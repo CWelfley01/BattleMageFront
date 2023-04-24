@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.16.0",
-    "npm": "9.5.1"
+    "npm": "9.6.5"
   },
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
@@ -42,26 +42,26 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^9.1.2",
     "babel-plugin-async-to-promises": "^1.0.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.16",
-    "copy-webpack-plugin": "^4.5.2",
+    "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^5.2.0",
-    "css-loader": "^1.0.0",
-    "eslint": "^4.2.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.39.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-react": "^7.1.0",
-    "express": "4.17.1",
+    "express": "^4.18.2",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.1",
     "latest-version": "^7.0.0",
     "node": "^18.16.0",
-    "postcss-loader": "^2.1.6",
+    "postcss-loader": "^7.2.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0",
@@ -71,10 +71,10 @@
     "sass": "^1.52.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
-    "webpack-cli": "3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "3.7.2",
-    "webpack-dev-server": "3.10.3",
-    "webpack-hot-middleware": "2.25.0",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-hot-middleware": "^2.25.3",
     "webpack-merge": "4.2.2"
   },
   "devDependencies": {
@@ -83,7 +83,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.46.0"
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^5.80.0"
   }
 }
