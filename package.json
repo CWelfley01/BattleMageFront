@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.16.0",
-    "npm": "6.13.4"
+    "npm": "9.5.1"
   },
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
