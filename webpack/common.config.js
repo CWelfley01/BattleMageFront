@@ -6,9 +6,6 @@ module.exports = {
     app: ['./src/bootstrap.js'],
     vendor: './src/vendor.js',
   },
-  output: {
-    hashFunction: "xxhash64"
-  },
 
   resolve: {
     extensions: ['.js', '.scss'],
